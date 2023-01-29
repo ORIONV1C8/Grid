@@ -15,9 +15,9 @@ body{
 	max-width: 960px;
 	margin: 100px auto;
 	outline: 6px solid yellow;
-	background-color: blue;
+	background-color: wheat;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .parte{
@@ -38,4 +38,37 @@ body{
 
 .parte:hover{
 	color: black;
+}
+.uno {
+	background-color: orange;
+	grid-column-start: ;
+	grid-column-end: ;
+}
+.dos {
+	background-color: firebrick;
+}
+.tres {
+	background-color: blue;
+}
+.cuatro {
+	background-color: yellowgreen;
+}
+.cinco {
+	background-color: rebeccapurple;
+	grid-column-start: ;
+	grid-column-end: ;
+}
+.seis {
+	background-color: fuchsia;
+}
+.siete {
+	background-color: aqua;
+}
+.ocho {
+	background-color: dimgray;
+	grid-column-start: ;
+	grid-column-end: ;
+}
+.nueve {
+	background-color: chartreuse;
 }
