@@ -17,7 +17,9 @@ body{
 	outline: 6px solid yellow;
 	background-color: wheat;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-auto-flow: column;
 }
 
 .parte{
@@ -41,8 +43,6 @@ body{
 }
 .uno {
 	background-color: orange;
-	grid-column-start: ;
-	grid-column-end: ;
 }
 .dos {
 	background-color: firebrick;
@@ -55,8 +55,6 @@ body{
 }
 .cinco {
 	background-color: rebeccapurple;
-	grid-column-start: ;
-	grid-column-end: ;
 }
 .seis {
 	background-color: fuchsia;
@@ -66,8 +64,6 @@ body{
 }
 .ocho {
 	background-color: dimgray;
-	grid-column-start: ;
-	grid-column-end: ;
 }
 .nueve {
 	background-color: chartreuse;
