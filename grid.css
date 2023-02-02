@@ -17,8 +17,9 @@ body{
 	outline: 6px solid yellow;
 	background-color: wheat;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 40px 20px;
+	grid-template-columns: auto auto auto;
+	gap: 10px;
+	align-items: end;
 }
 
 .parte{
@@ -28,12 +29,12 @@ body{
 	Oxygen, Ubuntu, Cantarell, 'Open Sans',
 	'Helvetica Neue', sans-serif;
 	font-weight: bold;
-	padding: 22px;
+	padding: 1rem;
 	border: bisque 1px solid;
 
 	text-align: center;
 	border-radius: 8px;
-	font-size: 2em;
+	font-size: 1.5rem;
 	cursor: pointer;
 }
 
@@ -42,7 +43,6 @@ body{
 }
 .uno {
 	background-color: orange;
-	grid-area: 1/1/span 2/span 2;
 }
 .dos {
 	background-color: firebrick;
@@ -55,7 +55,6 @@ body{
 }
 .cinco {
 	background-color: rebeccapurple;
-	grid-column: 2/4;
 }
 .seis {
 	background-color: fuchsia;
@@ -68,5 +67,4 @@ body{
 }
 .nueve {
 	background-color: chartreuse;
-	grid-column: 1/4;
 }
