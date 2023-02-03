@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: -apple-system,
+	blinkMacSystemFont, 'Segoe UI', Roboto,
+	Oxygen, Ubuntu, Cantarell, 'Open Sans',
+	'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	background-color: bisque;
+}
+.contenedor{
+	width: 700px;
+	max-width: 100%;
+	margin: 100px auto;
+	margin-top: 2em;
+	padding: 20px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 2fr;
+	gap: 1em;
+}
+.hijo{
+	background-color: red;
+	padding: 22px;
+	border: bisque 1px solid;
+	border-radius: 8px;
+	font-size: 1em;
+	cursor: pointer;
+	text-align: center;
+}
+.hijo:hover{
+	color: white;
+}
+.uno {
+	background-color: orange;
+}
+.dos {
+	background-color: blueviolet;
+}
+.tres {
+	background-color: greenyellow;
+}
+.cuatro {
+	background-color: tomato;
+	grid-column: 1/4;
+}
+.cinco {
+	background-color: red;
+	grid-column: 1/3;
+}
+.seis {
+	background-color: goldenrod;
+}
+.siete {
+	background-color: thistle;
+}
+.ocho {
+	background-color: turquoise;
+	grid-column: 2/4;
+}
+.nueve {
+	background-color: firebrick;
+	grid-column: 1/4;
+}
+@media screen and (max-width:725px){
+	body{
+		background-color: aqua;
+	}
+	.contenedor{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+	}
+	.tres{
+		grid-column: 1/2;
+	}
+	.cuatro{
+		grid-column: 2/3;
+	}
+	.cinco{
+		grid-column: 1/3;
+	}
+	.seis{
+		grid-column: 1/2;
+	}
+	.ocho{
+		grid-column: 1/3;
+	}
+	.nueve{
+		grid-column: 1/3;
+	}
+}
+@media screen and (max-width:500px){
+	body{
+		background-color: whitesmoke;
+	}
+	.contenedor{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.uno, .dos, .tres, .cuatro, .seis, .siete{
+		grid-column: 1/3;
+	}
+}
